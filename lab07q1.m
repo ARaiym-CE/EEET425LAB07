@@ -1,4 +1,5 @@
 %EEET 425 LAB07
+
 s3 = sqrt(3); %shorthand for root 3
 gL = (1/(4*sqrt(2))) * [1+s3, 3+s3, 3-s3, 1-s3]; %reconstruction lowpass, q1
 gH = (1/(4*sqrt(2))) * [1-s3, -(3-s3), 3+s3, -(1+s3)]; %reconstruction highpass, q1
@@ -33,3 +34,4 @@ plot(w/pi, S_hL + S_hH); %part 3, sum of decomposition spectra
 
 figure;
 plot(w/pi, S_gL + S_gH); %part 3, sum of reconstruction spectra
+
